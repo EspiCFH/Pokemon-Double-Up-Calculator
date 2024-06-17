@@ -16,10 +16,10 @@ r2d = re.findall('\d+',range2)
 odds = 0
 
 for roll1 in r1d:
-    viable = 0
     for roll2 in r2d:
         if hp - int(roll1) - int(roll2) <= 0:
             odds += 0.00390625
 
 print('')
 print('Odds of the Double-Up killing: '+str(100*round(odds,3))+'%')
+input('\nPress ENTER to close')
